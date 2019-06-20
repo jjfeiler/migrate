@@ -12,7 +12,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/dhui/dktest"
+	"github.com/jjfeiler/dktest"
 
 	dt "github.com/golang-migrate/migrate/v4/database/testing"
 	"github.com/golang-migrate/migrate/v4/dktesting"

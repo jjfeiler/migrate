@@ -17,7 +17,7 @@ __Database migrations written in Go. Use as [CLI](#cli-usage) or import as [libr
    (Keeps the drivers lightweight, too.)
  * Database drivers don't assume things or try to correct user input. When in doubt, fail.
 
-Forked from [mattes/migrate](https://github.com/mattes/migrate)
+Forked from [golang-migrate/migrate](https://github.com/golang-migrate/migrate) to add support for OracleDB
 
 ## Databases
 
