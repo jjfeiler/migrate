@@ -9,8 +9,8 @@ import (
 )
 
 import (
-	"github.com/jjfeiler/dktest"
 	"github.com/gocql/gocql"
+	"github.com/jjfeiler/dktest"
 )
 
 import (

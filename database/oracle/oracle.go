@@ -124,6 +124,9 @@ func (g *GOracle) Open(url string) (database.Driver, error) {
 		DatabaseName:    purl.Path,
 		MigrationsTable: migrationsTable,
 	})
+	if err != nil {
+		return nil, err
+	}
 
 	return gor, nil
 }
@@ -171,8 +174,6 @@ func (g *GOracle) Lock() error {
 			return &database.Error{Err: resstr, Query: []byte(lockQuery)}
 		}
 	}
-
-	return database.ErrLocked
 }
 
 func (g *GOracle) Unlock() error {
@@ -201,8 +202,6 @@ func (g *GOracle) Unlock() error {
 			return &database.Error{Err: errstr, Query: []byte(lockQuery)}
 		}
 	}
-
-	return database.ErrLocked
 }
 
 func (g *GOracle) Run(migration io.Reader) error {
@@ -263,8 +262,9 @@ func (g *GOracle) Version() (version int, dirty bool, err error) {
 		return 0, false, &database.Error{OrigErr: err, Query: []byte(query)}
 
 	default:
-		dirty, ok := readBool(dirtyStr); if !ok {
-			errstr :=  fmt.Sprintf("Unexpected value in dirty column %s", dirtyStr)
+		dirty, ok := readBool(dirtyStr);
+		if !ok {
+			errstr := fmt.Sprintf("Unexpected value in dirty column %s", dirtyStr)
 			return 0, false, &database.Error{Err: errstr, Query: []byte(query)}
 		}
 		return version, dirty, nil
