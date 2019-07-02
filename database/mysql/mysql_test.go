@@ -13,8 +13,8 @@ import (
 )
 
 import (
-	"github.com/dhui/dktest"
 	"github.com/go-sql-driver/mysql"
+	"github.com/jjfeiler/dktest"
 )
 
 import (

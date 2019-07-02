@@ -9,7 +9,6 @@ require (
 	github.com/cockroachdb/cockroach-go v0.0.0-20181001143604-e0a95dfd547c
 	github.com/cznic/ql v1.2.0
 	github.com/denisenkom/go-mssqldb v0.0.0-20190515213511-eb9f6a1743f3
-	github.com/dhui/dktest v0.3.0
 	github.com/docker/docker v0.7.3-0.20190108045446-77df18c24acf
 	github.com/fsouza/fake-gcs-server v1.7.0
 	github.com/go-sql-driver/mysql v1.4.1
@@ -22,6 +21,7 @@ require (
 	github.com/hashicorp/golang-lru v0.5.1 // indirect
 	github.com/jackc/fake v0.0.0-20150926172116-812a484cc733 // indirect
 	github.com/jackc/pgx v3.2.0+incompatible // indirect
+	github.com/jjfeiler/dktest v0.3.1
 	github.com/kardianos/osext v0.0.0-20190222173326-2bc1f35cddc0 // indirect
 	github.com/konsorten/go-windows-terminal-sequences v1.0.2 // indirect
 	github.com/kr/pretty v0.1.0 // indirect
@@ -51,4 +51,5 @@ require (
 	google.golang.org/appengine v1.5.0 // indirect
 	google.golang.org/genproto v0.0.0-20190425155659-357c62f0e4bb
 	google.golang.org/grpc v1.20.1 // indirect
+	gopkg.in/goracle.v2 v2.16.3
 )

@@ -5,7 +5,7 @@ import (
 )
 
 import (
-	"github.com/dhui/dktest"
+	"github.com/jjfeiler/dktest"
 )
 
 // ContainerSpec holds Docker testing setup specifications

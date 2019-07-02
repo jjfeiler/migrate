@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/dhui/dktest"
+	"github.com/jjfeiler/dktest"
 	"github.com/golang-migrate/migrate/v4"
 
 	dt "github.com/golang-migrate/migrate/v4/database/testing"

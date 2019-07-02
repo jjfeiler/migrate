@@ -16,7 +16,7 @@ import (
 )
 
 import (
-	"github.com/dhui/dktest"
+	"github.com/jjfeiler/dktest"
 	"github.com/mongodb/mongo-go-driver/bson"
 	"github.com/mongodb/mongo-go-driver/mongo"
 )
