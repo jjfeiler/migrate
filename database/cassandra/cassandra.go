@@ -11,7 +11,7 @@ import (
 	"time"
 
 	"github.com/gocql/gocql"
-	"github.com/golang-migrate/migrate/v4/database"
+	"github.com/jjfeiler/migrate/v4/database"
 	"github.com/hashicorp/go-multierror"
 )
 

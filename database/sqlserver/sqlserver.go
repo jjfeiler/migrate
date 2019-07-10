@@ -9,8 +9,8 @@ import (
 	nurl "net/url"
 
 	mssql "github.com/denisenkom/go-mssqldb" // mssql support
-	"github.com/golang-migrate/migrate/v4"
-	"github.com/golang-migrate/migrate/v4/database"
+	"github.com/jjfeiler/migrate/v4"
+	"github.com/jjfeiler/migrate/v4/database"
 	"github.com/hashicorp/go-multierror"
 )
 

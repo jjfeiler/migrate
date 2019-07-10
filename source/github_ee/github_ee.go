@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/golang-migrate/migrate/v4/source"
-	gh "github.com/golang-migrate/migrate/v4/source/github"
+	"github.com/jjfeiler/migrate/v4/source"
+	gh "github.com/jjfeiler/migrate/v4/source/github"
 	"github.com/google/go-github/github"
 )
 

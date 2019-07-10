@@ -18,10 +18,10 @@ import (
 
 // module imports, see go.mod
 import (
-	"github.com/golang-migrate/migrate/v4"
-	dt "github.com/golang-migrate/migrate/v4/database/testing"
-	"github.com/golang-migrate/migrate/v4/dktesting"
-	_ "github.com/golang-migrate/migrate/v4/source/file"
+	"github.com/jjfeiler/migrate/v4"
+	dt "github.com/jjfeiler/migrate/v4/database/testing"
+	"github.com/jjfeiler/migrate/v4/dktesting"
+	_ "github.com/jjfeiler/migrate/v4/source/file"
 )
 
 var (
